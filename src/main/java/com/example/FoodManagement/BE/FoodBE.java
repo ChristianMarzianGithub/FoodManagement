@@ -1,7 +1,11 @@
 package com.example.FoodManagement.BE;
 
-import com.example.FoodManagement.BE.UnitBE;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name="FOOD")
@@ -10,25 +14,18 @@ public class FoodBE{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "calories")
     private String calories;
 
-    @Column(name = "FAT")
     private String fat;
 
-    @Column(name = "CARBOHYDRATES")
     private String carbohydrates;
 
-    @Column(name = "FIBER")
     private String fiber;
 
-    @Column(name = "PROTEIN")
     private String protein;
 
-    @Column(name = "PORTION_AMOUNT")
     private String portion_amount;
 
     @OneToOne
