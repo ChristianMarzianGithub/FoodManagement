@@ -16,4 +16,5 @@ public class FoodService {
     public List<FoodBE> getAll(){
         return foodRepository.findAll();
     }
+
 }

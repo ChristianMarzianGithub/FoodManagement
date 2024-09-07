@@ -8,7 +8,7 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="FOOD")
+@Table(name="FoodItems", schema = "FOOD")
 public class FoodBE{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
