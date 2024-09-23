@@ -3,8 +3,8 @@ package com.example.FoodManagement.BE;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="USER", schema="FOOD")
-public class UserBE {
+@Table(name="CUSTOMER", schema="FOOD")
+public class CustomerBE {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
